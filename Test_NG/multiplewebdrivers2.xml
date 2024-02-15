@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+	  <parameter name="web" value="edge"></parameter>
+	  <parameter name="//input[@aria-label='Phone number, username, or email']" value="sunmathi12"></parameter>
+	  <parameter name="//input[@aria-label='Password']" value="samu@123"></parameter>
+	  <classes>
+		  <class name="multiple_webdrivers.MultiplewebDrivers"></class>
+	  </classes>
+  </test> <!-- Test -->
+  <test name="test1">
+	  <parameter name="web" value="firefox"></parameter>
+	   <parameter name="//input[@aria-label='Phone number, username, or email']" value="sunmathi12"></parameter>
+	  <parameter name="//input[@aria-label='Password']" value="samu@123"></parameter>
+	 
+	  <classes>
+		  <class name="multiple_webdrivers.MultiplewebDrivers">
+		  
+	  </class>
+	  </classes>
+  </test>
+  <test name="test2">
+	  <parameter name="web" value="chrome"></parameter>
+	   <parameter name="//input[@aria-label='Phone number, username, or email']" value="sunmathi12"></parameter>
+	  <parameter name="//input[@aria-label='Password']" value="samu@123"></parameter>
+	 
+	  <classes>
+		  <class name="multiple_webdrivers.MultiplewebDrivers"></class>
+	  </classes>
+  </test>
+</suite> <!-- Suite -->

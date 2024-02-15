@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="sView1:r1:0:email::content" value="sunmathi.p"></parameter>
+	<parameter name="sView1:r1:0:password::content" value="Samu@12345"></parameter>
+	<parameter name="sView1:r1:0:retypePassword::content" value="Samu@12345"></parameter>
+	<parameter name="sView1:r1:0:firstName::content" value="Sunmathi"></parameter>
+	<parameter name="sView1:r1:0:lastName::content" value="Dhanu"></parameter>
+	<parameter name="sView1:r1:0:jobTitle::content" value="IT"></parameter>
+	<parameter name="sView1:r1:0:workPhone::content" value="8457965142"></parameter>
+	<parameter name="sView1:r1:0:companyName::content" value="CTS"></parameter>
+	<parameter name="sView1:r1:0:address1::content" value="Perumbakkam"></parameter>
+	<parameter name="sView1:r1:0:city::content" value="Chennai"></parameter>
+	<parameter name="sView1:r1:0:postalCode::content" value="641654"></parameter>
+	
+	<parameter name="//input[@name='firstname']" value="Dhanasekar"></parameter>
+	<parameter name="//input[@name='lastname']" value="Manickam"></parameter>
+	<parameter name="//input[@name='reg_email__']" value="dhanu@yahoo.com"></parameter>
+	<parameter name="//input[@name='reg_passwd__']" value="Samusam!5467"></parameter>
+  <test thread-count="5" name="Test">
+	  <classes>
+		  <class name="parameter.Oracle_1"></class>
+	  </classes>
+  </test> <!-- Test -->
+  
+  <test name="test1">
+	  <classes>
+		  <class name="priority.Fb_signin"></class>
+	  </classes>
+  </test>
+</suite> <!-- Suite -->
